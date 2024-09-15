@@ -68,6 +68,7 @@ const {id} = useParams()
     if (validateForm()) {
       try {
         const response = await axios.post('https://timesheet-backend-a289.vercel.app/api/auth/signup', companyDetails);
+        console.log(response)
         setSuccess('Signup successful!');
         setError('');
         // Optionally, navigate to the login page or dashboard after successful signup
