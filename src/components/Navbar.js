@@ -9,9 +9,10 @@ import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import ShareIcon from '@mui/icons-material/Share';
 import LogoutIcon from '@mui/icons-material/Logout';
-import { Box, Drawer, List, ListItem, ListItemIcon, ListItemText, Avatar } from '@mui/material';
+import { Box, Drawer, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../contexts/AuthContext';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -111,9 +112,9 @@ const Navbar = () => {
           <Box sx={{ display: { xs: 'none', sm: 'flex' }, alignItems: 'center' }}>
             {isAuthenticated ? (
               <>
-                <Avatar sx={{ bgcolor: '#FFFFFF', mr: 2 }}>
+                <AccountCircleIcon sx={{ bgcolor: '#FFFFFF', mr: 2 }}/>
                   {user ? `${user.firstName[0]}${user.lastName[0]}` : ''}
-                </Avatar>
+       
                 <Typography
                   variant="body1"
                   sx={{ color: '#FFFFFF', display: 'inline', mr: 2 }}
