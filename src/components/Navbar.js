@@ -108,7 +108,7 @@ const Navbar = () => {
           >
             FastNDigital
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' }, alignItems: 'center', display: 'flex' }}>
+          <Box sx={{ display: { xs: 'none', sm: 'block' }, alignItems: 'center' }}>
             {isAuthenticated ? (
               <>
                 <Avatar sx={{ bgcolor: '#FFFFFF', mr: 2 }}>
