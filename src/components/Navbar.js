@@ -12,7 +12,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import { Box, Drawer, List, ListItem, ListItemIcon, ListItemText, Avatar } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../contexts/AuthContext';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
